@@ -31,7 +31,7 @@ def setup_package():
         maintainer="Limix Developers",
         maintainer_email="horta@ebi.ac.uk",
         license="MIT",
-        description="Core for Limix.",
+        description="Limix core.",
         long_description=long_description,
         url='https://github.com/limix/limix-core',
         packages=find_packages(),
