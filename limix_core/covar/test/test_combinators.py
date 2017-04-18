@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
-from limix_legacy.core.covar import SQExpCov
-from limix_legacy.core.covar import SumCov
+from limix_core.covar import SQExpCov
+from limix_core.covar import SumCov
 from limix_legacy.utils.check_grad import mcheck_grad
 import scipy as sp
 

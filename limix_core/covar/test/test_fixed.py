@@ -3,9 +3,9 @@ import unittest
 import scipy as SP
 import numpy as np
 import sys
-from limix_legacy.core.covar import FixedCov
+from limix_core.covar import FixedCov
 from limix_legacy.utils.check_grad import mcheck_grad
-from limix_legacy.core.type.exception import NotArrayConvertibleError
+from limix_core.type.exception import NotArrayConvertibleError
 
 class TestFixed(unittest.TestCase):
     def setUp(self):

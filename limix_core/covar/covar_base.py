@@ -1,7 +1,7 @@
 import pdb
 
 import sys
-from limix_legacy.core.type.observed import Observed
+from limix_core.type.observed import Observed
 from limix_legacy.hcache import Cached, cached
 from limix_legacy.utils.eigen import *
 import scipy as sp

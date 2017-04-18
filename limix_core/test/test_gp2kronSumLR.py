@@ -1,8 +1,8 @@
 # import unittest
-# from limix_legacy.core.covar import FreeFormCov
-# from limix_legacy.core.mean import MeanKronSum
-# from limix_legacy.core.gp import GP2KronSumLR
-# from limix_legacy.core.gp import GP
+# from limix_core.covar import FreeFormCov
+# from limix_core.mean import MeanKronSum
+# from limix_core.gp import GP2KronSumLR
+# from limix_core.gp import GP
 # from limix_legacy.utils.preprocess import covar_rescale
 # from limix_legacy.utils.check_grad import mcheck_grad
 #

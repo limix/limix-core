@@ -1,5 +1,5 @@
 import sys
-from limix_legacy.core.mean.linear import Linear
+from limix_core.mean.linear import Linear
 
 import scipy as SP
 import scipy.linalg as LA

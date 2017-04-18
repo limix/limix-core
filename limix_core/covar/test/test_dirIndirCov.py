@@ -3,7 +3,7 @@ import unittest
 import scipy as sp
 import numpy as np
 import sys
-from limix_legacy.core.covar.dirIndirCov import DirIndirCov
+from limix_core.covar.dirIndirCov import DirIndirCov
 from limix_legacy.utils.check_grad import mcheck_grad
 
 class TestDirIndirCov(unittest.TestCase):

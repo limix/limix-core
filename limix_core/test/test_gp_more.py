@@ -1,12 +1,12 @@
 import unittest
 
-from limix_legacy.core.mean import MeanKronSum
-from limix_legacy.core.covar import FreeFormCov
-from limix_legacy.core.covar import FixedCov
-from limix_legacy.core.covar import KronCov 
-from limix_legacy.core.covar.combinators import SumCov
-from limix_legacy.core.gp.gp_base import GP
-from limix_legacy.core.gp import GP2KronSum
+from limix_core.mean import MeanKronSum
+from limix_core.covar import FreeFormCov
+from limix_core.covar import FixedCov
+from limix_core.covar import KronCov 
+from limix_core.covar.combinators import SumCov
+from limix_core.gp.gp_base import GP
+from limix_core.gp import GP2KronSum
 from limix_legacy.utils.check_grad import mcheck_grad
 from limix_legacy.utils.preprocess import covar_rescale
 

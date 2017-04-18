@@ -4,12 +4,12 @@ import scipy.linalg
 import copy
 import sys
 import time
-from limix_legacy.core.type.observed import Observed
+from limix_core.type.observed import Observed
 from limix_legacy.hcache import Cached, cached
-from limix_legacy.core.covar import Covariance
-from limix_legacy.core.mean import MeanBase
-from limix_legacy.core.covar.cov_reml import cov_reml
-import limix_legacy.core.optimize.optimize_bfgs as OPT
+from limix_core.covar import Covariance
+from limix_core.mean import MeanBase
+from limix_core.covar.cov_reml import cov_reml
+import limix_core.optimize.optimize_bfgs as OPT
 from .relay import GPMeanRelay
 
 import logging

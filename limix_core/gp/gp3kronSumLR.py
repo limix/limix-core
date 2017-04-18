@@ -1,6 +1,6 @@
 import sys
-from limix_legacy.core.mean import MeanKronSum
-from limix_legacy.core.covar import Cov3KronSumLR
+from limix_core.mean import MeanKronSum
+from limix_core.covar import Cov3KronSumLR
 from limix_legacy.hcache import Cached, cached
 from limix_legacy.utils.util_functions import vec
 
@@ -10,8 +10,8 @@ import scipy as sp
 import scipy.linalg as la
 import time as TIME
 from .gp_base import GP
-from limix_legacy.core.gp import GP2KronSum
-from limix_legacy.core.covar.cov_reml import cov_reml
+from limix_core.gp import GP2KronSum
+from limix_core.covar.cov_reml import cov_reml
 
 class GP3KronSumLR(GP2KronSum):
     """

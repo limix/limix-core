@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
-from limix_legacy.core.covar import FreeFormCov 
-from limix_legacy.core.covar import KronCov
+from limix_core.covar import FreeFormCov 
+from limix_core.covar import KronCov
 from limix_legacy.utils.preprocess import covar_rescale
 from limix_legacy.utils.check_grad import mcheck_grad
 import scipy as sp

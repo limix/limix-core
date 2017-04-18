@@ -1,8 +1,8 @@
 import unittest
 import numpy as np
-from limix_legacy.core.covar import SQExpCov
+from limix_core.covar import SQExpCov
 from limix_legacy.utils.check_grad import mcheck_grad
-from limix_legacy.core.type.exception import NotArrayConvertibleError
+from limix_core.type.exception import NotArrayConvertibleError
 import scipy as sp
 
 class TestSQExp(unittest.TestCase):

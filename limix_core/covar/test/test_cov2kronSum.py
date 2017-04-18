@@ -3,12 +3,12 @@ import unittest
 import scipy as sp
 import numpy as np
 import sys
-from limix_legacy.core.covar import Covariance
-from limix_legacy.core.covar import Cov2KronSum
-from limix_legacy.core.covar import FreeFormCov
+from limix_core.covar import Covariance
+from limix_core.covar import Cov2KronSum
+from limix_core.covar import FreeFormCov
 from limix_legacy.utils.check_grad import mcheck_grad
 from limix_legacy.utils.preprocess import covar_rescale
-from limix_legacy.core.type.exception import TooExpensiveOperationError
+from limix_core.type.exception import TooExpensiveOperationError
 
 class TestCov2KronSum(unittest.TestCase):
     def setUp(self):

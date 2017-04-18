@@ -1,8 +1,8 @@
 import sys
-from limix_legacy.core.type.observed import Observed
+from limix_core.type.observed import Observed
 from limix_legacy.hcache import Cached, cached
 from limix_legacy.utils.preprocess import regressOut
-from limix_legacy.core.utils import assert_finite_array
+from limix_core.utils import assert_finite_array
 import scipy as sp
 import numpy as np
 

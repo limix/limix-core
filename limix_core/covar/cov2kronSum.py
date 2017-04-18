@@ -2,8 +2,8 @@ import sys
 import numpy as np
 from .covar_base import Covariance
 from limix_legacy.hcache import cached
-from limix_legacy.core.type.exception import TooExpensiveOperationError
-from limix_legacy.core.utils import my_name
+from limix_core.type.exception import TooExpensiveOperationError
+from limix_core.utils import my_name
 from .util import msg_too_expensive_dim
 import scipy as sp
 import scipy.linalg as LA
@@ -364,7 +364,7 @@ if 0:
 
 
 if __name__ == '__main__':
-    from limix_legacy.core.covar import FreeFormCov
+    from limix_core.covar import FreeFormCov
     from limix_legacy.utils.preprocess import covar_rescale
 
     # define row caoriance

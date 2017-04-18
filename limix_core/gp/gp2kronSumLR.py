@@ -1,7 +1,7 @@
 import sys
-from limix_legacy.core.mean import MeanKronSum
-from limix_legacy.core.covar import Cov2KronSumLR
-from limix_legacy.core.covar import Covariance
+from limix_core.mean import MeanKronSum
+from limix_core.covar import Cov2KronSumLR
+from limix_core.covar import Covariance
 from limix_legacy.hcache import Cached, cached
 
 import pdb
@@ -9,12 +9,12 @@ import numpy as NP
 import scipy as sp
 import scipy.linalg as LA
 import time as TIME
-from limix_legacy.core.gp import GP
-from limix_legacy.core.covar.cov_reml import cov_reml
+from limix_core.gp import GP
+from limix_core.covar.cov_reml import cov_reml
 from limix_legacy.utils.util_functions import vec
-from limix_legacy.core.utils import assert_type_or_list_type
-from limix_legacy.core.utils import assert_type
-from limix_legacy.core.utils import assert_subtype
+from limix_core.utils import assert_type_or_list_type
+from limix_core.utils import assert_type
+from limix_core.utils import assert_subtype
 
 
 class GP2KronSumLR(GP):

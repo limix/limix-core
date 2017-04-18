@@ -1,10 +1,10 @@
 import unittest
 
-from limix_legacy.core.mean.mean_base import MeanBase as lin_mean
-from limix_legacy.core.covar.sqexp import SQExpCov
-from limix_legacy.core.covar.fixed import FixedCov
-from limix_legacy.core.covar.combinators import SumCov
-from limix_legacy.core.gp.gp_base import GP
+from limix_core.mean.mean_base import MeanBase as lin_mean
+from limix_core.covar.sqexp import SQExpCov
+from limix_core.covar.fixed import FixedCov
+from limix_core.covar.combinators import SumCov
+from limix_core.gp.gp_base import GP
 from limix_legacy.utils.check_grad import mcheck_grad
 
 import numpy as np

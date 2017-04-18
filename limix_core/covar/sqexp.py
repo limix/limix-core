@@ -1,7 +1,7 @@
 import sys
 from limix_legacy.hcache import cached
-from limix_legacy.core.utils import assert_make_float_array
-from limix_legacy.core.utils import assert_finite_array
+from limix_core.utils import assert_make_float_array
+from limix_core.utils import assert_finite_array
 import scipy as sp
 import numpy as np
 from .covar_base import Covariance
