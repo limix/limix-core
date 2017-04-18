@@ -5,7 +5,7 @@ import copy
 import sys
 import time
 from limix_core.type.observed import Observed
-from limix_legacy.hcache import Cached, cached
+from limix_core.hcache import Cached, cached
 from limix_core.covar import Covariance
 from limix_core.mean import MeanBase
 from limix_core.covar.cov_reml import cov_reml
@@ -254,7 +254,7 @@ class GP(Cached, Observed):
 
 
     def test_grad(self):
-        from limix_legacy.utils.check_grad import mcheck_grad
+        from limix_core.utils.check_grad import mcheck_grad
 
         def func(x, i):
             params = self.getParams()

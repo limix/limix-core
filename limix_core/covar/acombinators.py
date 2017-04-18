@@ -2,7 +2,7 @@ from .covar_base import Covariance
 import pdb
 import numpy as np
 import scipy as sp
-from limix_legacy.hcache import Cached, cached
+from limix_core.hcache import Cached, cached
 
 class ACombinatorCov(Covariance):
     """

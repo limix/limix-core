@@ -1,5 +1,5 @@
 import sys
-from limix_legacy.utils.preprocess import regressOut
+from limix_core.utils.preprocess import regressOut
 from limix_core.utils.cobj import cObject, cached
 import numpy as np
 from limix_core.utils import assert_make_float_array

@@ -6,8 +6,8 @@ import sys
 from limix_core.covar import Covariance
 from limix_core.covar import Cov2KronSum
 from limix_core.covar import FreeFormCov
-from limix_legacy.utils.check_grad import mcheck_grad
-from limix_legacy.utils.preprocess import covar_rescale
+from limix_core.utils.check_grad import mcheck_grad
+from limix_core.utils.preprocess import covar_rescale
 from limix_core.type.exception import TooExpensiveOperationError
 
 class TestCov2KronSum(unittest.TestCase):

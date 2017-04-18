@@ -6,13 +6,13 @@ import copy
 import pdb
 
 from .mean_base import MeanBase
-from limix_legacy.utils.preprocess import regressOut
-from limix_legacy.utils.util_functions import to_list
-from limix_legacy.hcache import Cached, cached
+from limix_core.utils.preprocess import regressOut
+from limix_core.utils.util_functions import to_list
+from limix_core.hcache import Cached, cached
 from limix_core.type.observed import *
 from limix_core.utils import assert_make_float_array
 from limix_core.utils import assert_type_or_list_type
-from limix_legacy.utils.util_functions import vec
+from limix_core.utils.util_functions import vec
 
 
 class MeanKronSum(MeanBase):

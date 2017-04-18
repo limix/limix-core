@@ -2,8 +2,8 @@ import pdb
 
 import sys
 from limix_core.type.observed import Observed
-from limix_legacy.hcache import Cached, cached
-from limix_legacy.utils.eigen import *
+from limix_core.hcache import Cached, cached
+from limix_core.utils.eigen import *
 import scipy as sp
 import scipy.linalg as LA
 import scipy.sparse.linalg as sla

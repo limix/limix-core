@@ -7,8 +7,8 @@ from limix_core.covar import KronCov
 from limix_core.covar.combinators import SumCov
 from limix_core.gp.gp_base import GP
 from limix_core.gp import GP2KronSum
-from limix_legacy.utils.check_grad import mcheck_grad
-from limix_legacy.utils.preprocess import covar_rescale
+from limix_core.utils.check_grad import mcheck_grad
+from limix_core.utils.preprocess import covar_rescale
 
 import copy
 import numpy as np

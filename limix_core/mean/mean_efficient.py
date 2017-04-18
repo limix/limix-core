@@ -1,9 +1,9 @@
 import sys
-from limix_legacy.utils.preprocess import regressOut
+from limix_core.utils.preprocess import regressOut
 from limix_core.utils.cobj import cObject
 from limix_core.mean.mean import compute_X1KX2
 from limix_core.mean.linear import compute_XYA
-import  limix_legacy.utils.psd_solve as psd_solve
+import  limix_core.utils.psd_solve as psd_solve
 import numpy as np
 
 import scipy.linalg as la

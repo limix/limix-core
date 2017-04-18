@@ -3,8 +3,8 @@ from limix_core.covar import FreeFormCov
 from limix_core.mean import MeanKronSum
 from limix_core.gp import GP2KronSum
 from limix_core.gp import GP
-from limix_legacy.utils.preprocess import covar_rescale
-from limix_legacy.utils.check_grad import mcheck_grad
+from limix_core.utils.preprocess import covar_rescale
+from limix_core.utils.check_grad import mcheck_grad
 
 import numpy as np
 import scipy as sp

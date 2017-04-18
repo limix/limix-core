@@ -3,7 +3,7 @@ import pdb
 import numpy as np
 import scipy as sp
 from .acombinators import ACombinatorCov
-from limix_legacy.hcache import Cached, cached
+from limix_core.hcache import Cached, cached
 
 class SumCov(ACombinatorCov):
     """
