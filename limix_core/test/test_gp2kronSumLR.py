@@ -3,8 +3,8 @@
 # from limix_core.mean import MeanKronSum
 # from limix_core.gp import GP2KronSumLR
 # from limix_core.gp import GP
-# from limix_core.utils.preprocess import covar_rescale
-# from limix_core.utils.check_grad import mcheck_grad
+# from limix_core.util.preprocess import covar_rescale
+# from limix_core.util.check_grad import mcheck_grad
 #
 # import numpy as np
 # import scipy as sp

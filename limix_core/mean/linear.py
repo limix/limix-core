@@ -1,9 +1,9 @@
 import sys
-from limix_core.utils.preprocess import regressOut
-from limix_core.utils.cobj import cObject, cached
+from limix_core.util.preprocess import regressOut
+from limix_core.util.cobj import cObject, cached
 import numpy as np
-from limix_core.utils import assert_make_float_array
-from limix_core.utils import assert_finite_array
+from limix_core.util import assert_make_float_array
+from limix_core.util import assert_finite_array
 
 import scipy.linalg as LA
 import copy

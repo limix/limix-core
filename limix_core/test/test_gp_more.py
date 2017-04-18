@@ -3,12 +3,12 @@ import unittest
 from limix_core.mean import MeanKronSum
 from limix_core.covar import FreeFormCov
 from limix_core.covar import FixedCov
-from limix_core.covar import KronCov 
+from limix_core.covar import KronCov
 from limix_core.covar.combinators import SumCov
 from limix_core.gp.gp_base import GP
 from limix_core.gp import GP2KronSum
-from limix_core.utils.check_grad import mcheck_grad
-from limix_core.utils.preprocess import covar_rescale
+from limix_core.util.check_grad import mcheck_grad
+from limix_core.util.preprocess import covar_rescale
 
 import copy
 import numpy as np
@@ -20,7 +20,7 @@ class TestGPBase(unittest.TestCase):
         np.random.seed(1)
 
         # define phenotype
-        N = 10 
+        N = 10
         P = 3
         Y = sp.randn(N,P)
 
@@ -62,15 +62,15 @@ class TestGPBase(unittest.TestCase):
         # define gp
         self._gp = GP(covar=covar, mean=mean)
         self._gpm = GP(covar=covar_m, mean=mean_m)
-        self._gp2ks = GP2KronSum(Y=Y, F=F, A=A, Cg=Cg, Cn=Cn, R=R) 
+        self._gp2ks = GP2KronSum(Y=Y, F=F, A=A, Cg=Cg, Cn=Cn, R=R)
 
-    def test_gpbase_gp2kronSum(self): 
+    def test_gpbase_gp2kronSum(self):
         d1 = self._gp2ks.LML()-self._gp.LML()
         d2 = self._gp2ks.LML_grad()['covar']
         d2-= self._gp.LML_grad()['covar']
         d  = sp.concatenate([sp.array([d1]), d2])
         np.testing.assert_almost_equal(d, 0., decimal=8)
-        
+
 
     def test_grad_gpbase_missdata(self):
 

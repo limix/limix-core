@@ -2,8 +2,8 @@ import scipy as sp
 import numpy as np
 import scipy.linalg as la
 from limix_core.hcache import cached
-from limix_core.utils import assert_make_float_array
-from limix_core.utils import assert_finite_array
+from limix_core.util import assert_make_float_array
+from limix_core.util import assert_finite_array
 from .covar_base import Covariance
 import pdb
 

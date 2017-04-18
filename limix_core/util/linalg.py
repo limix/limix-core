@@ -16,3 +16,5 @@ def vei_CoR_veX(X, C=None, R=None):
     if C is not None:   RV = sp.dot(RV, C.T)
     return RV.transpose((0,2,1))
 
+def vec(M):
+    return M.reshape((M.size, 1), order = 'F')

@@ -123,7 +123,7 @@ class KronCov(Covariance):
 
 if __name__=='__main__':
     from limix_core.covar import FreeFormCov
-    from limix_core.utils.preprocess import covar_rescale
+    from limix_core.util.preprocess import covar_rescale
 
     # define row caoriance
     dim_r = 10

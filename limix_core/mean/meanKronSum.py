@@ -1,18 +1,24 @@
-import sys
-import scipy as sp
-import numpy as np
-import scipy.linalg as LA
 import copy
 import pdb
+import sys
 
-from .mean_base import MeanBase
-from limix_core.utils.preprocess import regressOut
-from limix_core.utils.util_functions import to_list
+import numpy as np
+import scipy as sp
+import scipy.linalg as LA
+
 from limix_core.hcache import Cached, cached
 from limix_core.type.observed import *
-from limix_core.utils import assert_make_float_array
-from limix_core.utils import assert_type_or_list_type
-from limix_core.utils.util_functions import vec
+from limix_core.util import assert_make_float_array, assert_type_or_list_type
+from limix_core.util import vec
+
+from .mean_base import MeanBase
+
+
+def to_list(x):
+    if x is None: r = []
+    elif type(x) is not list: r = [x]
+    else: r = x
+    return r
 
 
 class MeanKronSum(MeanBase):
@@ -96,8 +102,11 @@ class MeanKronSum(MeanBase):
         istart = 0
         for ti in range(self.n_terms):
             iend = istart + self.F[ti].shape[1] * self.A[ti].shape[0]
-            B.append(sp.reshape(self.b[istart:iend], (self.F[ti].shape[1],
-                     self.A[ti].shape[0]), order='F'))
+            B.append(
+                sp.reshape(
+                    self.b[istart:iend], (self.F[ti].shape[1], self.A[ti]
+                                          .shape[0]),
+                    order='F'))
             istart = iend
         return B
 
@@ -164,7 +173,7 @@ class MeanKronSum(MeanBase):
         self._Y = value
         # missing data
         self._Iok = ~sp.isnan(value)
-        self._veIok = vec(self._Iok)[:,0]
+        self._veIok = vec(self._Iok)[:, 0]
         self._miss = (~self._Iok).any()
         # notify and clear_cached
         self.clear_cache('pheno')
@@ -173,7 +182,7 @@ class MeanKronSum(MeanBase):
 
     @y.setter
     def y(self, value):
-        print(("%s: y.setter not available in this class"%(self.__class__)))
+        print(("%s: y.setter not available in this class" % (self.__class__)))
 
     def setDesigns(self, F, A):
         """ set fixed effect designs """
@@ -254,6 +263,7 @@ class MeanKronSum(MeanBase):
         if self._miss:
             r = r[~self._veIok]
         return r
+
 
 if __name__ == '__main__':
 

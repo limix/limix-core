@@ -1,6 +1,6 @@
 import sys
-from limix_core.utils.preprocess import regressOut
-from limix_core.utils.cobj import cObject, cached
+from limix_core.util.preprocess import regressOut
+from limix_core.util.cobj import cObject, cached
 import numpy as np
 
 import scipy.linalg as LA

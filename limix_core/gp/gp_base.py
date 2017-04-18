@@ -254,7 +254,7 @@ class GP(Cached, Observed):
 
 
     def test_grad(self):
-        from limix_core.utils.check_grad import mcheck_grad
+        from limix_core.util.check_grad import mcheck_grad
 
         def func(x, i):
             params = self.getParams()

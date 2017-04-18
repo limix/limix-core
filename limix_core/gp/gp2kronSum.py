@@ -11,9 +11,9 @@ import scipy.linalg as LA
 import time as TIME
 from .gp_base import GP
 from limix_core.covar.cov_reml import cov_reml
-from limix_core.utils import assert_type_or_list_type
-from limix_core.utils import assert_type
-from limix_core.utils import assert_subtype
+from limix_core.util import assert_type_or_list_type
+from limix_core.util import assert_type
+from limix_core.util import assert_subtype
 
 
 class GP2KronSum(GP):

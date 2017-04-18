@@ -1,6 +1,7 @@
 import inspect
 import numpy as np
 from limix_core.type.exception import NotArrayConvertibleError
+from .linalg import vec
 
 
 def my_name():

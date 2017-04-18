@@ -4,7 +4,7 @@ import scipy as sp
 import numpy as np
 import sys
 from limix_core.covar.dirIndirCov import DirIndirCov
-from limix_core.utils.check_grad import mcheck_grad
+from limix_core.util.check_grad import mcheck_grad
 
 class TestDirIndirCov(unittest.TestCase):
     def setUp(self):
