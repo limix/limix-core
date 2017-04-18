@@ -1,7 +1,5 @@
 import sys
 import scipy as SP
-import h5py
-import pdb
 
 def vec(M):
     return M.reshape((M.size, 1), order = 'F')
@@ -14,8 +12,8 @@ def to_list(x):
 
 def smartAppend(table,name,value):
     """
-    helper function for apppending in a dictionary  
-    """ 
+    helper function for apppending in a dictionary
+    """
     if name not in list(table.keys()):
         table[name] = []
     table[name].append(value)
@@ -40,4 +38,3 @@ def smartDumpDictHdf5(RV,o):
             smartDumpDictHdf5(RV[key],g)
         else:
             o.create_dataset(name=key,data=SP.array(RV[key]),chunks=True,compression='gzip')
-
