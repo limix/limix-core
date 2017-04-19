@@ -30,7 +30,7 @@ def setup_package():
         version='1.0.0',
         maintainer="Limix Developers",
         maintainer_email="horta@ebi.ac.uk",
-        license="MIT",
+        license="Apache License 2.0'",
         description="Limix core.",
         long_description=long_description,
         url='https://github.com/limix/limix-core',
