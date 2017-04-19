@@ -1,7 +1,7 @@
 # limix-core
 
 [![PyPI-License](https://img.shields.io/pypi/l/limix_core.svg?style=flat-square)](https://pypi.python.org/pypi/limix_core/) [![PyPI-Version](https://img.shields.io/pypi/v/limix_core.svg?style=flat-square)](https://pypi.python.org/pypi/limix_core/)
-[![Documentation Status](https://readthedocs.org/projects/limix-core/badge/?style=flat-square&version=latest)](https://limix-core.readthedocs.io/)
+[![Documentation Status](https://readthedocs.org/projects/limix-core/badge/?style=flat-square&version=1.0.x)](https://limix-core.readthedocs.io/)
 
 Description of the package.
 
