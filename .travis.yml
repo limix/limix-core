@@ -19,4 +19,12 @@ notifications:
   email: false
 env:
   global:
-    - PKG_NAME=limix_core
+  - PKG_NAME=limix_core
+deploy:
+  provider: pypi
+  user: dhorta
+  password:
+    secure: pv/jin7eV5ClKZ3UCOpCzaHf3eA18aDlRMayXE5JjRAKbK9MTCj1w6v/N5SKgjs6lf8QceBElEn7ODhULqWoyRu/ae9oQt/9an1V/oMjegRzjYbiTB9NaebAlYGwL40h+7pANGJ9DgJh5vi+JBkxELUU3LEKBrjTZYwXaq3RPeet/mx2iaVqLSfQBpLdMFRrZ7p6Gg7y6sPKGzoy8Y6v7SgZeKdI42nwuzi8Cdt4cXbjhCWXlZqHfVzcUnbtM8gJBdiL7EZU6QTy4z/RJtGVUyyEjw1RovTs+7M/V6JGCtRwCddUOrjJNfaSvjZ0aNmOKTjT2fKq6hlpfeVNIjdDiL7LVPaTiL0fVdcfihil55OrDUHu6Syz76zIXuT5+4HaAjshuyBhvUXd/T1ljYAPZ00NkAa3Jd3FGaqsa62ELwKwFCskCBWwcJvi20aHy+1rYE37JjYXp2vNddWdfUaAOBxXwRIPlBIvBQv1BjvoClRhQH9bOZsCySuVO8ncWEaLuTUEEo6S5QKlJg2Lb8f5brAokof03jD/dvt7K1FPk99yfx6AET9o9g7pW5wFP0c9iNAqsuZtYVlOufnSZkyIAnv8zRiWnzW7Pq98NE8yKAbWT/ocAoO2Brvla5fwZmIWb4wHVoRIRgxeHEroa7BZ2LmdQkiL2H7K7UBkCSV4OHU=
+  on:
+    repo: limix/limix-core
+    branch: 1.0.x
