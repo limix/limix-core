@@ -31,7 +31,7 @@ def setup_package():
         maintainer="Limix Developers",
         maintainer_email="horta@ebi.ac.uk",
         license="Apache License 2.0'",
-        description="Limix core.",
+        description="Fast inference for Linear Mixed Models.",
         long_description=long_description,
         url='https://github.com/limix/limix-core',
         packages=find_packages(),
