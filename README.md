@@ -11,7 +11,7 @@ The recommended way of installing it is via
 [pip](https://pypi.python.org/pypi/pip)
 
 ```bash
-pip install limix
+pip install limix-core
 ```
 
 ## Usage
