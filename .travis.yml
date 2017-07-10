@@ -20,11 +20,15 @@ notifications:
 env:
   global:
   - PKG_NAME=limix_core
+  - PY_DEPS="pycparser ncephes numpy-sugar scipy scipy-sugar numpy"
+  - secure: bF0FBepIEkirjf9lRFU+vaydtU0+zP2vIQBK2l1ZbGohVP3XljZyjJGzjRyeDPKpcd63erqVXN1UQzPsmhFDRvCm4N5exBQLHfpC/qCAHW9pHESr3WMv0h8A1g/5O2TaJWSE3aN31ofTeHLUaJroLe/73bH7n6YRcyIyknlc+i/NI3K9pgwjg4pOA822ly1TD3EwA2ITQPZrdyhUD61y7UfeexPMz3DvhZ9TbiHOFoLboZW8DuEQA+n8naUlHNSzTsEw2oZAn0a5rYV3jdCS2OndV3ZKfhcPTCCKxLcE0z241xSSXldvMhB5UvcNjMZDsa1qrzq//sDYxZ3RX1H7gewM84xvs5Cki/qACuqdk3GM7ll0rfMPQbz7j4vmYeJTj2I/ru9y6Fjvefk2f9uvLf2Vrtm5j/2NNRjIuuK1GJ4cFLt6m2Qc3VYWszZWFut9FX4VwoRpFUGCLKRPWL7IP4v+cSXomGr4MbfhlV6bKCELs6XkRRUU4ukM38aZ/zX1ShALyQQClZnxI6SRXKJhrZTRDl+z7mcvhpr3xCWL6VPWePGf4V/1s0ZglxknzInxvZ6RfBO010f7/ZM0In9vkZRetTK04+w31esu4qp89goNk24pvR/j2hzxzodBOC4BqzvW+0D8Lb7zhArCF6mhfOPplz9QE3LQUyZpe0cZu+I=
 deploy:
   provider: pypi
+  server: https://upload.pypi.org/legacy/
   user: dhorta
   password:
     secure: pv/jin7eV5ClKZ3UCOpCzaHf3eA18aDlRMayXE5JjRAKbK9MTCj1w6v/N5SKgjs6lf8QceBElEn7ODhULqWoyRu/ae9oQt/9an1V/oMjegRzjYbiTB9NaebAlYGwL40h+7pANGJ9DgJh5vi+JBkxELUU3LEKBrjTZYwXaq3RPeet/mx2iaVqLSfQBpLdMFRrZ7p6Gg7y6sPKGzoy8Y6v7SgZeKdI42nwuzi8Cdt4cXbjhCWXlZqHfVzcUnbtM8gJBdiL7EZU6QTy4z/RJtGVUyyEjw1RovTs+7M/V6JGCtRwCddUOrjJNfaSvjZ0aNmOKTjT2fKq6hlpfeVNIjdDiL7LVPaTiL0fVdcfihil55OrDUHu6Syz76zIXuT5+4HaAjshuyBhvUXd/T1ljYAPZ00NkAa3Jd3FGaqsa62ELwKwFCskCBWwcJvi20aHy+1rYE37JjYXp2vNddWdfUaAOBxXwRIPlBIvBQv1BjvoClRhQH9bOZsCySuVO8ncWEaLuTUEEo6S5QKlJg2Lb8f5brAokof03jD/dvt7K1FPk99yfx6AET9o9g7pW5wFP0c9iNAqsuZtYVlOufnSZkyIAnv8zRiWnzW7Pq98NE8yKAbWT/ocAoO2Brvla5fwZmIWb4wHVoRIRgxeHEroa7BZ2LmdQkiL2H7K7UBkCSV4OHU=
   on:
+    tags: true
     repo: limix/limix-core
-    branch: 1.0.x
+    branch: master
