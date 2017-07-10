@@ -27,10 +27,10 @@ def setup_package():
 
     metadata = dict(
         name='limix-core',
-        version='1.0.1',
+        version='1.0.2',
         maintainer="Limix Developers",
         maintainer_email="horta@ebi.ac.uk",
-        license="Apache License 2.0'",
+        license="Apache License 2.0",
         description="Fast inference for Linear Mixed Models.",
         long_description=long_description,
         url='https://github.com/limix/limix-core',
